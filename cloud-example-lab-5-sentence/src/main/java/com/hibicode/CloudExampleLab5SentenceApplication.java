@@ -9,14 +9,13 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class CloudExampleLab4SentenceApplication {
+public class CloudExampleLab5SentenceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CloudExampleLab4SentenceApplication.class, args);
+		SpringApplication.run(CloudExampleLab5SentenceApplication.class, args);
 	}
 
-	// This "LoadBalanced" RestTemplate
-	// is automatically hooked into Ribbon:
+	// This "LoadBalanced" RestTemplate is automatically hooked into Ribbon
 	@Bean
 	@LoadBalanced
 	RestTemplate restTemplate() {
